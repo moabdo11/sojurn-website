@@ -1,0 +1,39 @@
+.base-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .modal-close {
+        width: 45px;
+        height: 45px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        right: -17.5px;
+        top: -17.5px;
+        background-color: black;
+        color: #ac5aea;
+        font-size: 32px;
+    }
+    .header {
+        font-size: 24px;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        .image {
+            width: 21em;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            @media screen and (max-width: 600px) {
+                width: 17em;
+                // left: calc(50% - 250px);
+            }
+        }
+    }
+}

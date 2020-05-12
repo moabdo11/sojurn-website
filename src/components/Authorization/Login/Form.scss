@@ -1,0 +1,84 @@
+$gray: #27282d;
+$medium-gray: lighten(#27282d, 25%);
+$light-gray: lighten(#27282d, 65%);
+$gradient: linear-gradient(140deg, rgb(169, 123, 204) 0%, rgb(172, 90, 234) 100%);
+.form {
+    margin-top: 2em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content;
+        label {
+            font-size: 20px;
+        }
+    }
+    button {
+        font-size: 21px;
+        padding: 5px 20px;
+        border: 0;
+        width: 200px;
+        background-color: #ac5aea;
+        color: #fff;
+        border-radius: 3px;
+        text-align: center;
+        transition: all 250ms ease-in-out;
+        cursor: pointer;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .input-container {
+        position: relative;
+        margin-bottom: 30px;
+        width: 340px;
+        input {
+            box-sizing: border-box;
+            background: transparent;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid $medium-gray;
+            color: $light-gray;
+            padding: 12px 6px 12px 36px;
+            font-size: 19px;
+            outline: none;
+            caret-color: rgb(229, 91, 141);
+            &:focus {
+                border-bottom: 3px solid transparent;
+                border-image: $gradient;
+                border-image-slice: 1;
+            }
+            &:focus+i {
+                color: $light-gray;
+            }
+            &::placeholder {
+                color: $light-gray;
+                opacity: .4;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            width: 220px;
+        }
+        input,
+        button {
+            font-family: 'Dosis', sans-serif;
+            letter-spacing: 1.3px;
+        }
+        i {
+            color: $medium-gray;
+            position: absolute;
+            left: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: color .3s;
+        }
+    }
+}

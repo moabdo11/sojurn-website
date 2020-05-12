@@ -1,0 +1,115 @@
+.box {
+    position: relative;
+    height: 400px;
+    width: 340px;
+    background: #121E24;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    &:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        left: -2px;
+        right: -2px;
+        background: #fff;
+        z-index: -1;
+        transform: skew(2deg, 2deg);
+    }
+    &:nth-child(1):before {
+        background: linear-gradient(315deg, #ac5aea, #ac5aea);
+    }
+    &:nth-child(2):before {
+        background: linear-gradient(315deg, #ac5aea, #ac5aea);
+    }
+    &:nth-child(3):before {
+        background: linear-gradient(315deg, #ac5aea, #ac5aea);
+    }
+    &:nth-child(4):before {
+        background: linear-gradient(315deg, #ac5aea, #ac5aea);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.05);
+        width: 50%;
+        height: 100%;
+        pointer-events: none;
+    }
+    @media screen and (min-width: 500px) and (max-width: 1024px) {
+        display: flex;
+        height: 500px;
+        width: 400px;
+    }
+    @media screen and (min-width: 2305px) and (max-width: 4096px) {
+        height: 600px;
+        width: 500px;
+    }
+    .content {
+        position: relative;
+        padding: 30px;
+        h2 {
+            position: absolute;
+            top: -60px;
+            right: 20px;
+            margin: 0;
+            padding: 0;
+            font-size: 10em;
+            color: rgba(255, 255, 255, 0.5);
+            transition: 0.5s;
+        }
+        &:hover h2 {
+            top: -140px;
+        }
+        h3 {
+            margin: 100px 0 10px;
+            padding: 0;
+            font-size: 32px;
+            font-weight: 500;
+            font-weight: 700;
+            line-height: 1.6;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        p {
+            margin-top: 20;
+            padding: 0;
+            font-weight: 500;
+            color: #fff;
+            line-height: 1.6;
+            font-size: 32px;
+        }
+        a {
+            position: relative;
+            margin: 20px 0 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: 500;
+            color: #fff;
+            border: 1px solid #fff;
+            font-size: 16px;
+            display: inline-block;
+            transition: 0.5s;
+            transform: translateY(-40px);
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+
+.box:hover .content a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.box .content a:hover {
+    color: #000;
+    background: #fff;
+}

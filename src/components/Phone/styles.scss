@@ -1,0 +1,161 @@
+// .round_animate_wrap {
+//     position: absolute;
+//     right: 50px;
+//     top: 60px;
+//     padding: 5px;
+//     overflow: hidden;
+//     z-index: -1;
+// }
+// .round_animate {
+//     width: 600px;
+//     height: 600px;
+//     position: relative;
+//     margin: 40px auto;
+// }
+// .round_animate .shape_1 {
+//     border: 1px solid #ac5aea;
+//     border-radius: 50%;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     transform: rotate(23deg);
+//     animation: shape_1 35s linear infinite;
+// }
+// .round_animate .shape_1 span {
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 50%;
+//     background-color: #ac5aea;
+//     position: absolute;
+//     left: 50%;
+// }
+// .round_animate .shape_1 span.r_1 {
+//     top: -5px;
+//     margin-left: -5px;
+// }
+// .round_animate .shape_1 span.r_2 {
+//     margin-left: -224px;
+//     top: 90px;
+// }
+// .round_animate .shape_1 span.r_3 {
+//     margin-left: -202px;
+//     top: 520px;
+// }
+// .round_animate .shape_1 span.r_4 {
+//     margin-left: 273px;
+//     top: 405px;
+// }
+// .round_animate .shape_2 {
+//     border: 1px solid #eaf5ff;
+//     width: 500px;
+//     top: 50px;
+//     height: 500px;
+//     left: 50px;
+//     border-radius: 50%;
+//     position: absolute;
+//     transform: rotate(-41deg);
+//     animation: shape_2 25s linear infinite;
+// }
+// .round_animate .shape_2 span {
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 50%;
+//     background-color: #bbdfff;
+//     position: absolute;
+//     left: 50%;
+// }
+// .round_animate .shape_2 span.r_1 {
+//     top: -5px;
+//     margin-left: -5px;
+// }
+// .round_animate .shape_2 span.r_2 {
+//     margin-left: -201px;
+//     top: 90px;
+// }
+// .round_animate .shape_2 span.r_3 {
+//     margin-left: -202px;
+//     top: 398px;
+// }
+// .round_animate .shape_2 span.r_4 {
+//     margin-left: 235px;
+//     top: 315px;
+// }
+// .round_animate .shape_3 {
+//     border: 1px solid #f1f8ff;
+//     width: 400px;
+//     top: 100px;
+//     height: 400px;
+//     left: 100px;
+//     border-radius: 50%;
+//     position: absolute;
+//     transform: rotate(0deg);
+//     animation: shape_3 15s linear infinite;
+// }
+// .round_animate .shape_3 span {
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 50%;
+//     background-color: #d0e9ff;
+//     position: absolute;
+//     left: 50%;
+// }
+// .round_animate .shape_3 span.r_1 {
+//     top: -5px;
+//     margin-left: -5px;
+// }
+// .round_animate .shape_3 span.r_2 {
+//     margin-left: -175px;
+//     top: 90px;
+// }
+// .round_animate .shape_3 span.r_3 {
+//     margin-left: -141px;
+//     top: 340px;
+// }
+// .round_animate .shape_3 span.r_4 {
+//     margin-left: 172px;
+//     top: 285px;
+// }
+// @keyframes shape_1 {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
+// @keyframes shape_2 {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
+// @keyframes shape_3 {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
+// @media only screen and (min-width: 0px) and (max-width: 991px) {
+//     .home_img {
+//         margin-top: 40px;
+//         height: 300px;
+//     }
+//     .home_img+.round_animate_wrap {
+//         display: none;
+//     }
+// }
+// .home_img img {
+//     max-height: 90%;
+//     /* top:30px; */
+//     /* left: -10px; */
+//     width: auto;
+//     position: absolute;
+//     /* not relative anymore */
+//     /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+//     transform: translate(-100px, -155px);
+//     /* replaces relative positioning (left and top => X and Y) */
+// }
